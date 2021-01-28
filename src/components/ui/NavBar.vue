@@ -24,10 +24,11 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 2;
+  color: #fff;
+  background-color: #12002f;
 
   .container {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
     display: flex;
     align-items: baseline;
     justify-content: space-between;

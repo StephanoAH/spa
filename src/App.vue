@@ -1,17 +1,20 @@
 <template>
   <NavBar />
   <Banner />
+  <Services />
 </template>
 
 <script>
 import NavBar from "./components/ui/NavBar.vue";
 import Banner from "./components/Banner.vue";
+import Services from "./components/Services.vue";
 
 export default {
   name: "App",
   components: {
     NavBar,
     Banner,
+    Services,
   },
 };
 </script>
