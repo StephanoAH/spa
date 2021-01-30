@@ -31,7 +31,6 @@ main {
     background-image: url(../assets/images/header1.jpg);
     background-position: center;
     background-size: cover;
-    margin: -0.5em;
 
     &:after {
       content: "";

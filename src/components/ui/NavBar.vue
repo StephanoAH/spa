@@ -4,7 +4,7 @@
       <h2>PORTFOLIO</h2>
       <nav>
         <a href="#">Home</a>
-        <a href="">Services</a>
+        <a href="#services">Services</a>
         <a href="">Projects</a>
         <a href="">Contact</a>
       </nav>

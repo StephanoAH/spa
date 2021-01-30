@@ -26,7 +26,7 @@ export default {
   font-family: "Fira sans", Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin: 0;
+  margin: -0.5em;
   padding: 0;
   box-sizing: border-box;
 }
