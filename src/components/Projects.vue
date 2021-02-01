@@ -159,7 +159,6 @@ $pink: #ff9fdb;
     .projects__grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 1fr);
       gap: 1em;
 
       .project {
@@ -191,6 +190,7 @@ $pink: #ff9fdb;
           color: #fff;
           visibility: hidden;
           opacity: 0;
+          transition: 0.4s;
 
           .project__content {
             margin: 3em 1em;

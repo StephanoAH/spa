@@ -3,6 +3,7 @@
   <Banner />
   <Services />
   <Projects />
+  <Contact />
 </template>
 
 <script>
@@ -10,6 +11,7 @@ import NavBar from "./components/ui/NavBar.vue";
 import Banner from "./components/Banner.vue";
 import Services from "./components/Services.vue";
 import Projects from "./components/Projects.vue";
+import Contact from "./components/Contact.vue";
 
 export default {
   name: "App",
@@ -18,6 +20,7 @@ export default {
     Banner,
     Services,
     Projects,
+    Contact,
   },
 };
 </script>
