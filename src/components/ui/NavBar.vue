@@ -5,7 +5,7 @@
       <nav>
         <a href="#">Home</a>
         <a href="#services">Services</a>
-        <a href="">Projects</a>
+        <a href="#projects">Projects</a>
         <a href="">Contact</a>
       </nav>
     </div>

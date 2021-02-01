@@ -11,13 +11,15 @@
               class="service__image"
             />
           </figure>
-          <h3>Service 1</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
-            optio saepe ipsum, atque quibusdam porro officiis maxime! Ad quos,
-            quis cumque odio perferendis in facere aliquid praesentium placeat
-            maxime ab.
-          </p>
+          <div class="service__content">
+            <h3>Service 1</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
+              optio saepe ipsum, atque quibusdam porro officiis maxime! Ad quos,
+              quis cumque odio perferendis in facere aliquid praesentium placeat
+              maxime ab.
+            </p>
+          </div>
         </div>
 
         <div class="service">
@@ -28,13 +30,15 @@
               class="service__image"
             />
           </figure>
-          <h3>Service 2</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
-            optio saepe ipsum, atque quibusdam porro officiis maxime! Ad quos,
-            quis cumque odio perferendis in facere aliquid praesentium placeat
-            maxime ab.
-          </p>
+          <div class="service__content">
+            <h3>Service 2</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
+              optio saepe ipsum, atque quibusdam porro officiis maxime! Ad quos,
+              quis cumque odio perferendis in facere aliquid praesentium placeat
+              maxime ab.
+            </p>
+          </div>
         </div>
 
         <div class="service">
@@ -45,13 +49,15 @@
               class="service__image"
             />
           </figure>
-          <h3>Service 3</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
-            optio saepe ipsum, atque quibusdam porro officiis maxime! Ad quos,
-            quis cumque odio perferendis in facere aliquid praesentium placeat
-            maxime ab.
-          </p>
+          <div class="service__content">
+            <h3>Service 3</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
+              optio saepe ipsum, atque quibusdam porro officiis maxime! Ad quos,
+              quis cumque odio perferendis in facere aliquid praesentium placeat
+              maxime ab.
+            </p>
+          </div>
         </div>
 
         <div class="service">
@@ -62,13 +68,15 @@
               class="service__image"
             />
           </figure>
-          <h3>Service 4</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
-            optio saepe ipsum, atque quibusdam porro officiis maxime! Ad quos,
-            quis cumque odio perferendis in facere aliquid praesentium placeat
-            maxime ab.
-          </p>
+          <div class="service__content">
+            <h3>Service 4</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
+              optio saepe ipsum, atque quibusdam porro officiis maxime! Ad quos,
+              quis cumque odio perferendis in facere aliquid praesentium placeat
+              maxime ab.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -82,6 +90,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$pink: #ff9fdb;
 .services {
   background-color: #eee;
 
@@ -99,15 +108,33 @@ export default {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 1em;
-      padding: 0.5em;
+      padding: 0.5em 3em;
 
       .service {
+        background-color: #fff;
+        border-radius: 1em;
+        overflow: hidden;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+
         p {
           text-align: justify;
         }
 
-        .service__image {
-          max-width: 100%;
+        .service__imageBox {
+          display: contents;
+          width: 100%;
+
+          .service__image {
+            display: block;
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-bottom: 5px solid $pink;
+          }
+        }
+
+        .service__content {
+          padding: 0 0.5em;
         }
       }
     }
