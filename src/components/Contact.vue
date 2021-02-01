@@ -46,6 +46,17 @@ export default {
   .contact__container {
     padding: 1em;
 
+    @media (max-width: 1024px) {
+      height: 600px;
+    }
+
+    @media (max-width: 768px) {
+      height: 850px;
+    }
+
+    @media (max-width: 768px) {
+      height: 580px;
+    }
     h2 {
       text-align: center;
       color: #fff;
@@ -123,6 +134,14 @@ export default {
           text-decoration: none;
           text-transform: uppercase;
           font-weight: 700;
+
+          @media (max-width: 1024px) {
+            margin: 2em;
+          }
+
+          @media (max-width: 768px) {
+            padding: 1em;
+          }
         }
       }
     }

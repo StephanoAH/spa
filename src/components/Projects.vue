@@ -161,6 +161,14 @@ $pink: #ff9fdb;
       grid-template-columns: repeat(3, 1fr);
       gap: 1em;
 
+      @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media (max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
       .project {
         height: 220px;
         position: relative;
@@ -194,6 +202,14 @@ $pink: #ff9fdb;
 
           .project__content {
             margin: 3em 1em;
+
+            @media (max-width: 1024px) {
+              margin: 0 1.4em;
+            }
+
+            @media (max-width: 768px) {
+              margin: 2em 1em;
+            }
 
             p {
               text-align: justify;
@@ -231,6 +247,14 @@ $pink: #ff9fdb;
         text-decoration: none;
         text-transform: uppercase;
         font-weight: 700;
+
+        @media (max-width: 768px) {
+          margin: 1.5em;
+        }
+
+        @media (max-width: 414px) {
+          margin: 1.5em;
+        }
       }
     }
   }

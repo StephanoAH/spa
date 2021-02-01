@@ -34,5 +34,9 @@ export default {
   margin: -0.5em;
   padding: 0;
   box-sizing: border-box;
+
+  @media (max-width: 414px) {
+    min-width: 60vh;
+  }
 }
 </style>

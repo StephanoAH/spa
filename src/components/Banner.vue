@@ -32,6 +32,18 @@ main {
     background-position: center;
     background-size: cover;
 
+    @media (max-width: 768px) {
+      min-height: 70vh;
+    }
+
+    @media (max-width: 414px) {
+      min-height: 80vh;
+
+      .hide--mobile {
+        display: none;
+      }
+    }
+
     &:after {
       content: "";
       display: block;
@@ -51,17 +63,29 @@ main {
       z-index: 1;
       color: #fff;
 
+      @media (max-width: 1024px) {
+        padding: 0 4em;
+      }
+
       h1 {
         font-size: 3.5rem;
         margin-bottom: 0;
         span {
           color: $pink;
         }
+
+        @media (max-width: 414px) {
+          font-size: 2.2rem;
+        }
       }
 
       h2 {
         font-size: 2rem;
         font-weight: 400;
+
+        @media (max-width: 414px) {
+          font-size: 1.3rem;
+        }
       }
 
       .banner__buton {
@@ -73,6 +97,10 @@ main {
         text-decoration: none;
         text-transform: uppercase;
         font-weight: 700;
+
+        @media (max-width: 414px) {
+          margin: 1em 0;
+        }
       }
     }
   }

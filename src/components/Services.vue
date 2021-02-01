@@ -95,7 +95,7 @@ $pink: #ff9fdb;
   background-color: #eee;
 
   .services__container {
-    padding: 1em 0;
+    padding: 2em 0;
 
     h2 {
       text-align: center;
@@ -109,6 +109,14 @@ $pink: #ff9fdb;
       grid-template-columns: repeat(4, 1fr);
       gap: 1em;
       padding: 0.5em 3em;
+
+      @media (max-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media (max-width: 414px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
 
       .service {
         background-color: #fff;
